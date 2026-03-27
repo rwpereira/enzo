@@ -132,11 +132,31 @@
       }
       footer {
         text-align: center;
-        padding: 30px;
-        color: #7f8c8d;
-        background: #fff;
-        box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.03);
+        padding: 50px 20px;
+        color: white;
+        background: linear-gradient(135deg, var(--primary), var(--secondary));
+      }
+      footer p {
+        max-width: 650px;
+        margin: 0 auto;
+      }
+      .footer-titulo {
+        font-size: 1.8rem;
         font-weight: bold;
+        margin-bottom: 20px;
+      }
+      .footer-proximo-passo {
+        background: rgba(255,255,255,0.15);
+        padding: 20px 25px;
+        border-radius: 12px;
+        max-width: 600px;
+        margin: 25px auto;
+        font-size: 1.05rem;
+      }
+      .footer-final {
+        margin-top: 25px;
+        font-size: 0.95rem;
+        opacity: 0.85;
       }
       /* Carta da Dinda */
       .carta-dinda {
@@ -331,6 +351,19 @@
         margin: 0;
         color: #555;
       }
+      .canal-link {
+        display: inline-block;
+        margin-top: 12px;
+        background: #e74c3c;
+        color: white;
+        padding: 6px 14px;
+        border-radius: 6px;
+        text-decoration: none;
+        font-size: 0.85rem;
+        font-weight: bold;
+        transition: background 0.3s;
+      }
+      .canal-link:hover { background: #c0392b; }
       .ferramenta-grid {
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -888,6 +921,114 @@
         </div>
       </div>
 
+      <!-- FERRAMENTAS, CORRETORAS E CANAIS -->
+      <div class="card">
+        <h2>🛠️ Ferramentas para Usar</h2>
+        <img
+          src="imagens/slide9.jpg"
+          alt="Canais de Educação Financeira no YouTube"
+          class="slide-img"
+        />
+
+        <p>
+          Antes de partir para o Plano de Ação, conheça as ferramentas que vão
+          te acompanhar nessa jornada. Todas são <strong>gratuitas</strong>!
+        </p>
+
+        <h3 style="color: var(--primary);">🌐 Sites para Acompanhar (Grátis!)</h3>
+        <div class="ferramenta-grid">
+          <div class="ferramenta-item">
+            <strong>Status Invest</strong>
+            <span>Crie uma carteira virtual, acompanhe ações e veja dividendos.
+            Perfeito para a Fase 1 do seu plano!</span>
+          </div>
+          <div class="ferramenta-item">
+            <strong>Investidor 10</strong>
+            <span>Simulador de investimentos. Coloque um valor e veja quanto ele
+            rende em 5, 10 ou 20 anos!</span>
+          </div>
+          <div class="ferramenta-item">
+            <strong>Fundamentus</strong>
+            <span>Dados completos de empresas. Quando quiser saber se uma empresa é
+            boa para investir, pesquise aqui.</span>
+          </div>
+          <div class="ferramenta-item">
+            <strong>Google Finance</strong>
+            <span>Acompanhe preços de ações em tempo real. Ótimo para checar
+            rapidamente como estão suas empresas favoritas.</span>
+          </div>
+        </div>
+
+        <h3 style="color: var(--primary); margin-top: 30px;">🏦 Corretoras para Começar (Todas Gratuitas!)</h3>
+        <p>
+          Para investir de verdade, você precisa de uma <strong>corretora</strong>
+          — é o app onde você compra e vende investimentos:
+        </p>
+        <table class="info-table">
+          <tr>
+            <th>Corretora</th>
+            <th>Por que é Boa</th>
+            <th>Taxa</th>
+          </tr>
+          <tr class="destaque">
+            <td><strong>Rico ⭐</strong></td>
+            <td>A favorita da Dinda! Muito conteúdo educativo para aprender</td>
+            <td><span class="risco-baixo">Grátis</span></td>
+          </tr>
+          <tr>
+            <td><strong>Nubank</strong></td>
+            <td>Super fácil de usar — você já conhece!</td>
+            <td><span class="risco-baixo">Grátis</span></td>
+          </tr>
+          <tr>
+            <td><strong>Inter</strong></td>
+            <td>App completo, tudo junto num lugar só</td>
+            <td><span class="risco-baixo">Grátis</span></td>
+          </tr>
+          <tr>
+            <td><strong>Clear</strong></td>
+            <td>Simples e direto ao ponto</td>
+            <td><span class="risco-baixo">Grátis</span></td>
+          </tr>
+        </table>
+
+        <h3 style="color: var(--primary); margin-top: 30px;">📺 Canais no YouTube para Estudar</h3>
+        <p>
+          A <strong>Regra 3</strong> diz: estude sempre! Escolha pelo menos um
+          canal para acompanhar toda semana:
+        </p>
+        <div class="canal-grid">
+          <div class="canal-card">
+            <h4>Me Poupe!</h4>
+            <p class="canal-estilo">Nathalia Arcuri</p>
+            <p>Divertido e com linguagem jovem. Perfeito para quem está
+            começando! Explica de um jeito que parece papo de amigo.</p>
+            <a href="https://www.youtube.com/@MePoupe" target="_blank" class="canal-link">Assistir no YouTube</a>
+          </div>
+          <div class="canal-card">
+            <h4>O Primo Rico</h4>
+            <p class="canal-estilo">Thiago Nigro</p>
+            <p>Explicações simples e práticas com exemplos do dia a dia.
+            Mostra a própria carteira e ensina na prática.</p>
+            <a href="https://www.youtube.com/@primorico" target="_blank" class="canal-link">Assistir no YouTube</a>
+          </div>
+          <div class="canal-card">
+            <h4>EconoMirna</h4>
+            <p class="canal-estilo">Mirna Borges</p>
+            <p>Bem didático para iniciantes. Ideal para entender juros
+            compostos, renda fixa e montar sua primeira carteira.</p>
+            <a href="https://www.youtube.com/@economirna" target="_blank" class="canal-link">Assistir no YouTube</a>
+          </div>
+          <div class="canal-card">
+            <h4>Investidor Sardinha</h4>
+            <p class="canal-estilo">Raul Sena</p>
+            <p>Focado em ações e análise de empresas. Ótimo para quando
+            você chegar na Fase 3 do seu plano!</p>
+            <a href="https://www.youtube.com/@investidorsardinha" target="_blank" class="canal-link">Assistir no YouTube</a>
+          </div>
+        </div>
+      </div>
+
       <!-- PLANO DE AÇÃO -->
       <div class="card">
         <h2>🗺️ Seu Plano de Ação</h2>
@@ -1051,138 +1192,6 @@
         </div>
       </div>
 
-      <!-- ONDE ESTUDAR -->
-      <div class="card">
-        <h2>📺 Canais para Aprender Mais</h2>
-        <img
-          src="imagens/slide9.jpg"
-          alt="Canais de Educação Financeira no YouTube"
-          class="slide-img"
-        />
-
-        <p>
-          A <strong>Regra 3</strong> diz: estude sempre! Estes canais no YouTube
-          ensinam tudo sobre investimentos de um jeito divertido e fácil de
-          entender. Escolha pelo menos um para acompanhar toda semana:
-        </p>
-
-        <div class="canal-grid">
-          <div class="canal-card">
-            <h4>Me Poupe!</h4>
-            <p class="canal-estilo">Nathalia Arcuri</p>
-            <p>
-              Divertido e com linguagem jovem. Perfeito para quem está
-              começando! Ela explica desde o básico até investimentos avançados
-              de um jeito que parece papo de amigo.
-            </p>
-          </div>
-          <div class="canal-card">
-            <h4>O Primo Rico</h4>
-            <p class="canal-estilo">Thiago Nigro</p>
-            <p>
-              Explicações simples e práticas com exemplos do dia a dia. Ele
-              mostra a própria carteira de investimentos e ensina na prática
-              como tomar decisões.
-            </p>
-          </div>
-          <div class="canal-card">
-            <h4>EconoMirna</h4>
-            <p class="canal-estilo">Mirna Borges</p>
-            <p>
-              Bem didático para iniciantes. Ideal para entender conceitos como
-              juros compostos, renda fixa e como montar sua primeira carteira
-              sem complicação.
-            </p>
-          </div>
-          <div class="canal-card">
-            <h4>Investidor Sardinha</h4>
-            <p class="canal-estilo">Raul Sena</p>
-            <p>
-              Focado em ações e análise de empresas. Quando você já estiver na
-              Fase 3 do seu plano, esse canal vai te ajudar a escolher as
-              melhores empresas para investir!
-            </p>
-          </div>
-        </div>
-
-        <h3 style="color: var(--primary); margin-top: 30px">
-          🛠️ Sites e Ferramentas Gratuitas
-        </h3>
-        <p>
-          Além dos canais, use estas ferramentas para acompanhar seus
-          investimentos e simular compras sem gastar nada:
-        </p>
-
-        <div class="ferramenta-grid">
-          <div class="ferramenta-item">
-            <strong>Status Invest</strong>
-            <span
-              >Crie uma carteira virtual, acompanhe ações e veja dividendos.
-              Perfeito para a Fase 1 do seu plano!</span
-            >
-          </div>
-          <div class="ferramenta-item">
-            <strong>Investidor 10</strong>
-            <span
-              >Simulador de investimentos. Coloque um valor e veja quanto ele
-              rende em 5, 10 ou 20 anos!</span
-            >
-          </div>
-          <div class="ferramenta-item">
-            <strong>Fundamentus</strong>
-            <span
-              >Dados completos de empresas. Quando quiser saber se uma empresa é
-              boa para investir, pesquise aqui.</span
-            >
-          </div>
-          <div class="ferramenta-item">
-            <strong>Google Finance</strong>
-            <span
-              >Acompanhe preços de ações em tempo real. Ótimo para checar
-              rapidamente como estão suas empresas favoritas.</span
-            >
-          </div>
-        </div>
-
-        <h3 style="color: var(--primary); margin-top: 30px">
-          🏦 Corretoras para Começar (Todas Gratuitas!)
-        </h3>
-        <p>
-          Para investir de verdade, você precisa de uma
-          <strong>corretora</strong>
-          — é o app onde você compra e vende investimentos. Todas abaixo são
-          gratuitas e fáceis de usar:
-        </p>
-
-        <table class="info-table">
-          <tr>
-            <th>Corretora</th>
-            <th>Por que é Boa</th>
-            <th>Taxa</th>
-          </tr>
-          <tr class="destaque">
-            <td><strong>Rico ⭐</strong></td>
-            <td>A favorita da Dinda! Muito conteúdo educativo para aprender</td>
-            <td><span class="risco-baixo">Grátis</span></td>
-          </tr>
-          <tr>
-            <td><strong>Nubank</strong></td>
-            <td>Super fácil de usar — você já conhece!</td>
-            <td><span class="risco-baixo">Grátis</span></td>
-          </tr>
-          <tr>
-            <td><strong>Inter</strong></td>
-            <td>App completo, tudo junto num lugar só</td>
-            <td><span class="risco-baixo">Grátis</span></td>
-          </tr>
-          <tr>
-            <td><strong>Clear</strong></td>
-            <td>Simples e direto ao ponto</td>
-            <td><span class="risco-baixo">Grátis</span></td>
-          </tr>
-        </table>
-      </div>
-
       <!-- PLANILHA DE INVESTIMENTOS -->
       <div class="card planilha-section">
         <h2>📊 Sua Planilha de Investimentos</h2>
@@ -1312,19 +1321,18 @@
     </div>
 
     <footer>
-      <p style="font-size:1.2rem; color:var(--primary); margin-bottom:10px;">
-        Parabéns, Enzo! Você chegou ao final do guia!
-      </p>
+      <p class="footer-titulo">🏆 Parabéns, Enzo! Você chegou ao final do guia!</p>
       <p>
         O hábito e o conhecimento que você está construindo hoje são o seu
-        verdadeiro tesouro. Lembre-se: o segredo não é ter muito dinheiro,
+        verdadeiro tesouro. O segredo não é ter muito dinheiro,
         é <strong>começar cedo e ser consistente</strong>.
       </p>
-      <p style="margin-top:15px;">
-        Seu próximo passo agora: <strong>Fase 1, Missão 1</strong> —
-        assista o primeiro vídeo do Me Poupe ou Primo Rico ainda hoje!
-      </p>
-      <p style="margin-top:15px; font-size:0.95rem;">
+      <div class="footer-proximo-passo">
+        🚀 <strong>Seu próximo passo agora:</strong><br>
+        Fase 1, Missão 1 — assista o primeiro vídeo do
+        Me Poupe ou Primo Rico ainda hoje!
+      </div>
+      <p class="footer-final">
         Daqui a alguns anos, você vai olhar para trás e agradecer a si mesmo
         por ter começado AGORA. A sua dinda tem muito orgulho de você! 💙
       </p>
