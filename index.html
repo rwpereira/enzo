@@ -138,6 +138,38 @@
         box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.03);
         font-weight: bold;
       }
+      /* Carta da Dinda */
+      .carta-dinda {
+        background: linear-gradient(135deg, #ffecd2, #fcb69f);
+        text-align: center;
+        position: relative;
+      }
+      .carta-dinda h2 {
+        color: #c0392b;
+        border-bottom: none;
+        justify-content: center;
+      }
+      .carta-conteudo {
+        background: white;
+        border-radius: 12px;
+        padding: 30px;
+        max-width: 650px;
+        margin: 20px auto;
+        box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        font-style: italic;
+        font-size: 1.05rem;
+        line-height: 1.8;
+        color: #555;
+        text-align: left;
+        border-left: 5px solid #c0392b;
+      }
+      .carta-assinatura {
+        text-align: right;
+        font-weight: bold;
+        color: #c0392b;
+        font-style: normal;
+        margin-top: 15px;
+      }
       .image-caption {
         text-align: center;
         font-size: 0.9rem;
@@ -145,6 +177,291 @@
         margin-top: -10px;
         margin-bottom: 20px;
         font-style: italic;
+      }
+      /* Tabelas responsivas */
+      .info-table {
+        width: 100%;
+        border-collapse: collapse;
+        margin: 20px 0;
+        font-size: 0.95rem;
+      }
+      .info-table th {
+        background: var(--primary);
+        color: white;
+        padding: 12px 15px;
+        text-align: left;
+      }
+      .info-table td {
+        padding: 10px 15px;
+        border-bottom: 1px solid #eee;
+      }
+      .info-table tr:nth-child(even) {
+        background: #f8f9fa;
+      }
+      .info-table tr:hover {
+        background: #e8f4f8;
+      }
+      .info-table .destaque {
+        background: #d4edda;
+        font-weight: bold;
+      }
+      /* Risco badges */
+      .risco-baixo {
+        color: #27ae60;
+        font-weight: bold;
+      }
+      .risco-medio {
+        color: #f39c12;
+        font-weight: bold;
+      }
+      .risco-alto {
+        color: #e74c3c;
+        font-weight: bold;
+      }
+      /* Seção planilha */
+      .planilha-section {
+        background: linear-gradient(135deg, #6c5ce7, #a29bfe);
+        color: white;
+        text-align: center;
+      }
+      .planilha-section h2 {
+        color: white;
+        border-bottom: none;
+        justify-content: center;
+      }
+      /* Resumo do podcast */
+      .resumo-box {
+        background: rgba(255, 255, 255, 0.15);
+        padding: 20px;
+        border-radius: 10px;
+        margin: 20px auto;
+        max-width: 600px;
+        text-align: left;
+      }
+      .resumo-box ul {
+        margin: 10px 0;
+        padding-left: 20px;
+      }
+      .resumo-box li {
+        margin-bottom: 8px;
+      }
+      /* Glossário acordeão */
+      .glossario-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+        margin-top: 15px;
+      }
+      .glossario-item {
+        background: #f0f3ff;
+        padding: 12px 15px;
+        border-radius: 8px;
+        border-left: 4px solid var(--primary);
+      }
+      .glossario-item strong {
+        color: var(--primary);
+        display: block;
+        margin-bottom: 4px;
+      }
+      .glossario-item span {
+        font-size: 0.9rem;
+        color: #555;
+      }
+      /* Regras de Ouro */
+      .regra {
+        display: flex;
+        align-items: flex-start;
+        gap: 15px;
+        padding: 18px;
+        margin-bottom: 12px;
+        border-radius: 10px;
+        background: linear-gradient(135deg, #fff9e6, #fff3cd);
+        border-left: 5px solid #f39c12;
+      }
+      .regra-numero {
+        background: #f39c12;
+        color: white;
+        font-weight: bold;
+        font-size: 1.2rem;
+        min-width: 38px;
+        height: 38px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-shrink: 0;
+      }
+      .regra-conteudo h4 {
+        margin: 0 0 5px 0;
+        color: #856404;
+        font-size: 1.05rem;
+      }
+      .regra-conteudo p {
+        margin: 0;
+        font-size: 0.93rem;
+        color: #555;
+      }
+      /* Canais cards */
+      .canal-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 15px;
+        margin-top: 15px;
+      }
+      .canal-card {
+        background: #f8f9fa;
+        border-radius: 10px;
+        padding: 18px;
+        border-top: 4px solid var(--primary);
+        text-align: center;
+      }
+      .canal-card h4 {
+        margin: 0 0 5px 0;
+        color: var(--primary);
+        font-size: 1rem;
+      }
+      .canal-card .canal-estilo {
+        font-size: 0.85rem;
+        color: #7f8c8d;
+        font-style: italic;
+        margin-bottom: 8px;
+      }
+      .canal-card p {
+        font-size: 0.9rem;
+        margin: 0;
+        color: #555;
+      }
+      .ferramenta-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 12px;
+        margin-top: 15px;
+      }
+      .ferramenta-item {
+        background: #eaf7ee;
+        padding: 15px;
+        border-radius: 10px;
+        border-left: 4px solid #27ae60;
+      }
+      .ferramenta-item strong {
+        color: #27ae60;
+        display: block;
+        margin-bottom: 4px;
+      }
+      .ferramenta-item span {
+        font-size: 0.9rem;
+        color: #555;
+      }
+      /* Plano de Ação - Fases */
+      .fase {
+        border-radius: 10px;
+        padding: 20px 25px;
+        margin-bottom: 20px;
+        border-left: 6px solid;
+      }
+      .fase-1 {
+        background: #eaf7ee;
+        border-color: #27ae60;
+      }
+      .fase-2 {
+        background: #e8f0fe;
+        border-color: #2980b9;
+      }
+      .fase-3 {
+        background: #fef9e7;
+        border-color: #f39c12;
+      }
+      .fase-4 {
+        background: #fde8e8;
+        border-color: #e74c3c;
+      }
+      .fase h3 {
+        margin: 0 0 15px 0;
+        font-size: 1.15rem;
+      }
+      .fase-1 h3 {
+        color: #27ae60;
+      }
+      .fase-2 h3 {
+        color: #2980b9;
+      }
+      .fase-3 h3 {
+        color: #f39c12;
+      }
+      .fase-4 h3 {
+        color: #e74c3c;
+      }
+      .fase ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+      }
+      .fase li {
+        padding: 8px 0 8px 32px;
+        position: relative;
+        font-size: 0.95rem;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+      }
+      .fase li:last-child {
+        border-bottom: none;
+      }
+      .fase li::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 20px;
+        height: 20px;
+        border: 2px solid #aaa;
+        border-radius: 4px;
+        background: white;
+      }
+      /* Responsividade */
+      @media (max-width: 600px) {
+        header h1 {
+          font-size: 2rem;
+        }
+        header p {
+          font-size: 1rem;
+        }
+        .card {
+          padding: 20px;
+        }
+        .glossario-grid {
+          grid-template-columns: 1fr;
+        }
+        .info-table {
+          font-size: 0.85rem;
+        }
+        .info-table th,
+        .info-table td {
+          padding: 8px 10px;
+        }
+        .resumo-box {
+          padding: 15px;
+        }
+        .fase {
+          padding: 15px 18px;
+        }
+        .fase li {
+          font-size: 0.9rem;
+        }
+        .canal-grid {
+          grid-template-columns: 1fr;
+        }
+        .ferramenta-grid {
+          grid-template-columns: 1fr;
+        }
+        .regra {
+          padding: 14px;
+          gap: 10px;
+        }
+        .regra-numero {
+          min-width: 32px;
+          height: 32px;
+          font-size: 1rem;
+        }
       }
     </style>
   </head>
@@ -159,7 +476,7 @@
       <div class="card">
         <h2>🏆 A Jornada Começa Aqui</h2>
         <img
-          src="imagens/slide1.png"
+          src="imagens/slide1.jpg"
           alt="Capa da Apresentação"
           class="slide-img"
         />
@@ -171,7 +488,7 @@
         </p>
       </div>
 
-      <!-- NOVO: PODCAST DE ORIGEM E GUIA EM PDF -->
+      <!-- PODCAST DE ORIGEM E GUIA EM PDF -->
       <div class="card podcast-section">
         <h2>🎧 O Ponto de Partida</h2>
         <p>
@@ -183,21 +500,50 @@
         <div class="audio-player">
           <h3>🎙️ Do TikTok ao Primeiro Investimento</h3>
           <audio controls>
-            <!-- CERTIFIQUE-SE DE QUE A EXTENSÃO DO ÁUDIO ESTEJA CORRETA (.mp3, .wav, etc) -->
             <source
               src="Do_TikTok_ao_primeiro_investimento_do_Enzo.m4a"
-              type="audio/mpeg"
+              type="audio/mp4"
             />
             Seu navegador não suporta o elemento de áudio.
           </audio>
         </div>
 
+        <div class="resumo-box">
+          <h3>📝 O que você vai aprender neste áudio:</h3>
+          <ul>
+            <li>
+              Como tudo começou — de um vídeo no TikTok até a decisão de
+              investir de verdade
+            </li>
+            <li>
+              Por que guardar dinheiro no cofrinho faz ele
+              <strong>perder valor</strong> com o tempo
+            </li>
+            <li>
+              O segredo dos <strong>juros compostos</strong> — o dinheiro que
+              trabalha sozinho
+            </li>
+            <li>
+              Por que começar aos <strong>10 anos</strong> é a maior vantagem
+              que você tem
+            </li>
+            <li>
+              O primeiro passo concreto: investir no
+              <strong>Tesouro Selic</strong>
+            </li>
+          </ul>
+          <p style="font-style: italic; opacity: 0.9; text-align: center">
+            Depois de ouvir, acompanhe tudo no Guia e na Planilha abaixo!
+          </p>
+        </div>
+
         <div class="download-box">
           <h3>📄 O Seu Manual Oficial</h3>
           <p>
-            O Guia do Investidor Mirim mencionado no podcast está disponível
-            aqui. Baixe para acompanhar todas as regras, ferramentas e o seu
-            plano de ação para enriquecer!
+            O <strong>Guia do Investidor Mirim</strong> tem tudo o que foi
+            falado no podcast de forma organizada: tipos de investimento,
+            empresas na Bolsa, ferramentas gratuitas, as 7 Regras de Ouro e o
+            seu Plano de Ação em 4 fases!
           </p>
           <a
             href="guia_investidor_mirim_enzo.pdf"
@@ -212,92 +558,704 @@
       <div class="card">
         <h2>🌱 O Que é Investir?</h2>
         <img
-          src="imagens/slide2.png"
+          src="imagens/slide2.jpg"
           alt="O que é Investir - Semente"
           class="slide-img"
         />
 
+        <p>
+          Investir é como <strong>plantar uma semente mágica</strong>. Você
+          coloca o seu dinheiro na terra (um investimento), cuida dele com
+          paciência, e com o tempo ele cresce e dá frutos — sozinho!
+        </p>
+
+        <div
+          class="highlight-box"
+          style="border-color: #e74c3c; background: #fde8e8"
+        >
+          <strong>🐷 O Cofrinho (semente na gaveta):</strong> Quando você guarda
+          R$ 100 no cofrinho, o dinheiro fica parado. Daqui a 1 ano ainda são R$
+          100. Daqui a 5 anos... R$ 100. Ele nunca cresce. Pior: com a
+          <strong>inflação</strong>, o que você compra com R$ 100 hoje vai
+          custar mais no futuro — ou seja, seu dinheiro perde valor sem você
+          perceber!
+        </div>
+
+        <div
+          class="highlight-box"
+          style="border-color: #27ae60; background: #eaf7ee"
+        >
+          <strong>🌳 O Investimento (semente plantada):</strong> Quando você
+          investe R$ 100, o dinheiro começa a trabalhar para você. Em 1 ano,
+          vira R$ 110. Em 5 anos, vira R$ 161! E a mágica é que os
+          <strong>juros compostos</strong>
+          fazem o dinheiro crescer cada vez mais rápido — é o famoso "juros
+          sobre juros". O dinheiro que rendeu também rende!
+        </div>
+
+        <p>
+          Pense assim: se você guardar R$ 50 por mês no cofrinho durante 1 ano,
+          terá R$ 600 parados. Mas se investir esses mesmos R$ 50 por mês, no
+          final do ano você terá mais do que R$ 600 — porque cada parcela que
+          você colocou foi crescendo enquanto você dormia, brincava e estudava!
+        </p>
+
         <img
-          src="imagens/slide3.png"
+          src="imagens/slide3.jpg"
           alt="O Poder da Bola de Neve"
           class="slide-img"
         />
 
+        <p>
+          É o <strong>efeito bola de neve</strong>: começa pequeno, mas vai
+          ficando ENORME com o tempo. Quanto mais cedo você começa, maior a bola
+          fica. E adivinha quem tem a maior vantagem?
+          <strong>Você, Enzo!</strong> Porque está começando aos 10 anos, quando
+          a maioria das pessoas só vai pensar nisso aos 25 ou 30.
+        </p>
+
         <div class="highlight-box">
-          <strong>O Poder Mágico dos Juros Compostos:</strong> O dinheiro no
-          cofrinho é apenas uma semente guardada na gaveta. O dinheiro investido
-          é uma semente plantada que cresce e gera novos frutos sozinha enquanto
-          você dorme, estuda ou brinca!
+          <strong>Resumindo:</strong> Investir é colocar o seu dinheiro para
+          trabalhar para você. Em vez de ele ficar parado perdendo valor, ele
+          cresce sozinho graças aos juros compostos — e quanto mais cedo você
+          começa, mais tempo ele tem para crescer!
         </div>
+
+        <h3 style="color: var(--primary)">Cofrinho vs. Dinheiro Investido</h3>
+        <table class="info-table">
+          <tr>
+            <th>Situação</th>
+            <th>No Cofrinho</th>
+            <th>Investido</th>
+          </tr>
+          <tr>
+            <td>Hoje</td>
+            <td>R$ 100</td>
+            <td>R$ 100</td>
+          </tr>
+          <tr>
+            <td>Em 1 ano</td>
+            <td>R$ 100 (parado)</td>
+            <td>R$ 110 (+10%)</td>
+          </tr>
+          <tr class="destaque">
+            <td>Em 5 anos</td>
+            <td>R$ 100 (parado)</td>
+            <td>R$ 161!</td>
+          </tr>
+        </table>
+
+        <h3 style="color: var(--primary)">
+          Por que começar CEDO é tão poderoso?
+        </h3>
+        <table class="info-table">
+          <tr>
+            <th>Idade que Começa</th>
+            <th>Resultado aos 30 Anos*</th>
+          </tr>
+          <tr class="destaque">
+            <td>10 anos (VOCÊ!)</td>
+            <td>R$ 15.000 viram R$ 80.000!</td>
+          </tr>
+          <tr>
+            <td>15 anos</td>
+            <td>R$ 15.000 viram R$ 50.000</td>
+          </tr>
+          <tr>
+            <td>20 anos</td>
+            <td>R$ 15.000 viram R$ 32.000</td>
+          </tr>
+          <tr>
+            <td>25 anos</td>
+            <td>R$ 15.000 viram R$ 20.000</td>
+          </tr>
+        </table>
+        <p style="font-size: 0.85rem; color: #7f8c8d; text-align: center">
+          *Exemplo com investimento mensal de R$ 50 e rendimento de 10% ao ano
+        </p>
       </div>
 
       <!-- ONDE O DINHEIRO TRABALHA & METAS -->
       <div class="card">
         <h2>🏦 Onde o Dinheiro Trabalha?</h2>
         <img
-          src="imagens/slide4.png"
+          src="imagens/slide4.jpg"
           alt="Lugares Seguros para Investir"
           class="slide-img"
         />
 
+        <p>
+          Existem vários "lugares" onde você pode colocar o seu dinheiro para
+          trabalhar. Cada um funciona de um jeito diferente. Vamos conhecer os
+          <strong>3 principais lugares seguros</strong> para começar:
+        </p>
+
+        <div
+          class="highlight-box"
+          style="border-color: #2980b9; background: #e8f0fe"
+        >
+          <strong>🏛️ Tesouro Selic (Onde você vai começar!)</strong><br />
+          Funciona assim: você
+          <strong>empresta dinheiro para o governo brasileiro</strong>. Em
+          troca, ele te paga um "aluguel" todo dia útil! É o lugar mais seguro
+          do jogo porque o governo sempre paga de volta. Você pode sacar quando
+          quiser e dá para começar com apenas <strong>R$ 30</strong>!
+        </div>
+
+        <div
+          class="highlight-box"
+          style="border-color: #8e44ad; background: #f4ecf7"
+        >
+          <strong>🎓 Tesouro Educa+</strong><br />
+          Funciona parecido com o Tesouro Selic, mas foi feito especialmente
+          para
+          <strong>pagar a sua faculdade no futuro</strong>! Você investe agora,
+          o dinheiro cresce com o tempo, e quando chegar a hora da universidade
+          ele estará lá esperando por você. É como plantar uma árvore hoje para
+          colher os frutos daqui a alguns anos.
+        </div>
+
+        <div
+          class="highlight-box"
+          style="border-color: #e67e22; background: #fef5e7"
+        >
+          <strong>🏦 CDBs dos Bancos</strong><br />
+          Nesse caso, você
+          <strong>empresta dinheiro para bancos grandes</strong>
+          (como Nubank ou Inter) e ganha juros em troca. É seguro porque tem o
+          <strong>FGC</strong> (Fundo Garantidor de Créditos) — se o banco
+          quebrar, o governo te devolve até R$ 250.000! Rende mais que a
+          poupança e também é fácil de começar.
+        </div>
+
+        <p>
+          E a <strong>Poupança</strong>? Ela é segura, mas rende muito pouco
+          comparada às opções acima. É como uma tartaruga numa corrida contra
+          coelhos — chega lá, mas demora muito mais. Por isso o Tesouro Selic é
+          a melhor escolha para começar!
+        </p>
+
         <img
-          src="imagens/slide5.png"
+          src="imagens/slide5.jpg"
           alt="Minhas Metas de Investimento"
           class="slide-img"
         />
 
         <p>
-          A melhor forma de começar é pela Renda Fixa, como o
-          <strong>Tesouro Selic</strong>. Nele, você empresta dinheiro para o
-          governo de forma muito segura e recebe "juros" por isso todos os dias.
-          Ter metas claras, como um videogame novo ou a faculdade do futuro,
-          ajuda a manter o foco!
+          Ter <strong>metas claras</strong> ajuda a manter o foco! Pode ser um
+          videogame novo, um celular, ou até a faculdade do futuro. Quando você
+          sabe <em>para que</em> está investindo, fica muito mais fácil manter a
+          disciplina todo mês.
         </p>
+
+        <h3 style="color: var(--primary)">🛣️ Renda Fixa — A Estrada Segura</h3>
+        <table class="info-table">
+          <tr>
+            <th>Tipo</th>
+            <th>O Que É</th>
+            <th>Risco</th>
+          </tr>
+          <tr>
+            <td>Tesouro Selic</td>
+            <td>Emprestar dinheiro pro governo</td>
+            <td><span class="risco-baixo">Muito Baixo</span></td>
+          </tr>
+          <tr>
+            <td>CDB</td>
+            <td>Emprestar dinheiro pro banco</td>
+            <td><span class="risco-baixo">Baixo</span></td>
+          </tr>
+          <tr>
+            <td>Poupança</td>
+            <td>Deixar no banco (rende pouco)</td>
+            <td><span class="risco-baixo">Muito Baixo</span></td>
+          </tr>
+        </table>
+
+        <h3 style="color: var(--primary)">
+          🎢 Renda Variável — A Montanha-Russa
+        </h3>
+        <table class="info-table">
+          <tr>
+            <th>Tipo</th>
+            <th>O Que É</th>
+            <th>Risco</th>
+          </tr>
+          <tr>
+            <td>Ações</td>
+            <td>Comprar um pedacinho de uma empresa</td>
+            <td><span class="risco-alto">Alto</span></td>
+          </tr>
+          <tr>
+            <td>FIIs</td>
+            <td>Fundos que compram imóveis (shoppings, prédios)</td>
+            <td><span class="risco-medio">Médio-Alto</span></td>
+          </tr>
+          <tr>
+            <td>ETFs</td>
+            <td>Pacote com várias ações juntas</td>
+            <td><span class="risco-medio">Médio-Alto</span></td>
+          </tr>
+        </table>
+
+        <div class="highlight-box">
+          <strong>Dica do Especialista:</strong> Comece pela Renda Fixa (Tesouro
+          Selic) para aprender. Depois, quando entender bem, vá para as ações!
+        </div>
+
+        <h3 style="color: var(--primary)">
+          🏢 Empresas que Você Conhece na Bolsa
+        </h3>
+        <table class="info-table">
+          <tr>
+            <th>Empresa</th>
+            <th>Código</th>
+            <th>O Que Faz</th>
+          </tr>
+          <tr>
+            <td>Google</td>
+            <td>GOGL34</td>
+            <td>YouTube, Android, Buscador</td>
+          </tr>
+          <tr>
+            <td>Apple</td>
+            <td>AAPL34</td>
+            <td>iPhone, MacBook</td>
+          </tr>
+          <tr>
+            <td>Meta (Facebook)</td>
+            <td>M1TA34</td>
+            <td>Instagram, WhatsApp</td>
+          </tr>
+          <tr>
+            <td>Nubank</td>
+            <td>ROXO34</td>
+            <td>Banco digital</td>
+          </tr>
+          <tr>
+            <td>Petrobras</td>
+            <td>PETR4</td>
+            <td>Petróleo e gasolina</td>
+          </tr>
+          <tr>
+            <td>Vale</td>
+            <td>VALE3</td>
+            <td>Mineração (ferro)</td>
+          </tr>
+        </table>
+        <p style="font-size: 0.9rem; color: #7f8c8d; text-align: center">
+          Você pode acompanhar essas empresas de graça no
+          <strong>Status Invest</strong>!
+        </p>
+
+        <h3 style="color:var(--primary);">📈📉 O Que Faz Uma Ação Subir ou Descer?</h3>
+        <p>
+          O preço de uma ação muda todo dia. Mas por quê? Entender isso é
+          essencial para não se assustar quando o preço cai — e para saber
+          quando uma empresa está indo bem:
+        </p>
+        <table class="info-table">
+          <tr>
+            <th style="background:#27ae60;">Faz Subir</th>
+            <th style="background:#e74c3c;">Faz Descer</th>
+          </tr>
+          <tr>
+            <td>Empresa vendeu mais</td>
+            <td>Empresa vendeu menos</td>
+          </tr>
+          <tr>
+            <td>Lucro aumentou</td>
+            <td>Teve prejuízo</td>
+          </tr>
+          <tr>
+            <td>Lançou produto novo de sucesso</td>
+            <td>Produto falhou</td>
+          </tr>
+          <tr>
+            <td>Economia do país vai bem</td>
+            <td>Crise econômica</td>
+          </tr>
+          <tr>
+            <td>Muita gente quer comprar a ação</td>
+            <td>Muita gente quer vender</td>
+          </tr>
+        </table>
+        <div class="highlight-box">
+          <strong>Lembra da Regra 7?</strong> Ignore o barulho! Quedas de curto
+          prazo são normais. O importante é escolher boas empresas e pensar no
+          longo prazo. Se a empresa continua vendendo bem e dando lucro, a ação
+          tende a se recuperar com o tempo.
+        </div>
       </div>
 
-      <!-- PLANO DE AÇÃO E REGRAS -->
+      <!-- PLANO DE AÇÃO -->
       <div class="card">
-        <h2>🗺️ O Plano de Ação & Regras de Ouro</h2>
+        <h2>🗺️ Seu Plano de Ação</h2>
         <img
-          src="imagens/slide8.png"
+          src="imagens/slide8.jpg"
           alt="Missão em 4 Fases"
           class="slide-img"
         />
 
+        <p>
+          O seu plano foi dividido em <strong>4 missões</strong> progressivas.
+          Cada fase te prepara para a próxima. Imprima esta página ou marque no
+          caderno conforme for completando!
+        </p>
+
+        <div class="fase fase-1">
+          <h3>Missão Fase 1: Primeiras 2 Semanas</h3>
+          <ul>
+            <li>Assistir 3 vídeos do Me Poupe ou Primo Rico</li>
+            <li>Criar conta no Status Invest (gratuito)</li>
+            <li>Escolher 3 empresas que você conhece para acompanhar</li>
+            <li>Anotar no caderno: por que escolheu essas empresas?</li>
+          </ul>
+        </div>
+
+        <div class="fase fase-2">
+          <h3>Missão Fase 2: Mês 1</h3>
+          <ul>
+            <li>Primeiro investimento REAL: R$ 30-50 no Tesouro Selic</li>
+            <li>Todo dia olhar quanto rendeu (mesmo que centavos!)</li>
+            <li>Continuar acompanhando as 3 empresas escolhidas</li>
+            <li>Anotar no caderno o que aprendeu na semana</li>
+          </ul>
+        </div>
+
+        <div class="fase fase-3">
+          <h3>Missão Fase 3: Meses 2-3</h3>
+          <ul>
+            <li>Continuar aportando R$ 50/mês no Tesouro</li>
+            <li>Simular compra de ações no Status Invest (carteira virtual)</li>
+            <li>Entender: por que a ação subiu ou desceu essa semana?</li>
+            <li>Pesquisar sobre FIIs (Fundos Imobiliários)</li>
+          </ul>
+        </div>
+
+        <div class="fase fase-4">
+          <h3>Missão Fase 4: Mês 4+</h3>
+          <ul>
+            <li>Primeira ação REAL (1 unidade de algo acessível)</li>
+            <li>Acompanhar se recebe dividendos</li>
+            <li>Diversificar: ter pelo menos 2-3 tipos de investimento</li>
+            <li>Ensinar um amigo o que aprendeu!</li>
+          </ul>
+        </div>
+
+        <div class="highlight-box">
+          <strong>Lembre-se:</strong> A consistência de investir
+          <strong>todo mês sem falta</strong> é a sua maior arma. Comece pequeno
+          (com R$ 30 a R$ 50), estude sempre e tenha paciência. Use a
+          <strong>planilha de investimentos</strong> para registrar cada passo!
+        </div>
+      </div>
+
+      <!-- REGRAS DE OURO -->
+      <div class="card">
+        <h2>🏅 As 7 Regras de Ouro do Investidor</h2>
         <img
-          src="imagens/slide7.png"
+          src="imagens/slide7.jpg"
           alt="As 7 Regras de Ouro"
           class="slide-img"
         />
 
         <p>
-          O seu plano de 4 fases foi desenhado para te transformar num
-          investidor completo! A consistência de investir
-          <strong>todo mês sem falta</strong> é a sua maior arma. Lembre-se:
-          comece pequeno (com R$ 30 a R$ 50), estude sempre e tenha paciência.
+          Estes são os 7 mandamentos que todo investidor de sucesso segue. Cole
+          no espelho, guarde no caderno e nunca esqueça:
         </p>
+
+        <div class="regra">
+          <div class="regra-numero">1</div>
+          <div class="regra-conteudo">
+            <h4>Nunca Invista o Que Você Precisa</h4>
+            <p>
+              Só invista dinheiro que você não vai precisar tão cedo. Sempre
+              tenha uma reserva para emergências — como um dinheiro separado
+              para quando o controle do videogame quebrar!
+            </p>
+          </div>
+        </div>
+
+        <div class="regra">
+          <div class="regra-numero">2</div>
+          <div class="regra-conteudo">
+            <h4>Tenha Paciência</h4>
+            <p>
+              Investir é como plantar: demora para dar frutos. Não adianta ficar
+              puxando a semente da terra para ver se cresceu. Plante, regue todo
+              mês e deixe o tempo fazer a mágica!
+            </p>
+          </div>
+        </div>
+
+        <div class="regra">
+          <div class="regra-numero">3</div>
+          <div class="regra-conteudo">
+            <h4>Estude Sempre</h4>
+            <p>
+              Quanto mais você aprende, melhores decisões toma. Assista vídeos,
+              leia o seu guia, acompanhe as notícias. O conhecimento é o
+              investimento que mais rende na vida!
+            </p>
+          </div>
+        </div>
+
+        <div class="regra">
+          <div class="regra-numero">4</div>
+          <div class="regra-conteudo">
+            <h4>Comece Pequeno</h4>
+            <p>
+              Não precisa de muito dinheiro. R$ 30 já dá para começar no Tesouro
+              Selic! O importante não é o valor, é o hábito de investir.
+              Começando pequeno você aprende sem medo de errar.
+            </p>
+          </div>
+        </div>
+
+        <div class="regra">
+          <div class="regra-numero">5</div>
+          <div class="regra-conteudo">
+            <h4>Seja Consistente</h4>
+            <p>
+              Investir todo mês é mais importante que o valor. R$ 50 por mês,
+              todos os meses, vale mais do que R$ 500 uma vez só e depois parar.
+              A consistência é o superpoder do investidor!
+            </p>
+          </div>
+        </div>
+
+        <div class="regra">
+          <div class="regra-numero">6</div>
+          <div class="regra-conteudo">
+            <h4>Diversifique</h4>
+            <p>
+              Não coloque todos os ovos na mesma cesta! Se a cesta cair, você
+              perde tudo. Mas se dividir em várias cestas (Tesouro, ações,
+              FIIs), mesmo que uma vá mal, as outras te protegem.
+            </p>
+          </div>
+        </div>
+
+        <div class="regra">
+          <div class="regra-numero">7</div>
+          <div class="regra-conteudo">
+            <h4>Ignore o Barulho</h4>
+            <p>
+              Não se assuste com quedas de curto prazo. A bolsa sobe e desce
+              todo dia — isso é normal! Os melhores investidores são os que
+              mantêm a calma e pensam no longo prazo. Lembra da bola de neve?
+              Ela só cresce se você não parar de rolar!
+            </p>
+          </div>
+        </div>
       </div>
 
       <!-- ONDE ESTUDAR -->
       <div class="card">
         <h2>📺 Canais para Aprender Mais</h2>
         <img
-          src="imagens/slide9.png"
+          src="imagens/slide9.jpg"
           alt="Canais de Educação Financeira no YouTube"
           class="slide-img"
         />
 
         <p>
-          Utilize ferramentas como o site <strong>Status Invest</strong> para
-          simular as suas compras de ações e entender como funcionam os
-          dividendos de grandes empresas sem risco!
+          A <strong>Regra 3</strong> diz: estude sempre! Estes canais no YouTube
+          ensinam tudo sobre investimentos de um jeito divertido e fácil de
+          entender. Escolha pelo menos um para acompanhar toda semana:
         </p>
+
+        <div class="canal-grid">
+          <div class="canal-card">
+            <h4>Me Poupe!</h4>
+            <p class="canal-estilo">Nathalia Arcuri</p>
+            <p>
+              Divertido e com linguagem jovem. Perfeito para quem está
+              começando! Ela explica desde o básico até investimentos avançados
+              de um jeito que parece papo de amigo.
+            </p>
+          </div>
+          <div class="canal-card">
+            <h4>O Primo Rico</h4>
+            <p class="canal-estilo">Thiago Nigro</p>
+            <p>
+              Explicações simples e práticas com exemplos do dia a dia. Ele
+              mostra a própria carteira de investimentos e ensina na prática
+              como tomar decisões.
+            </p>
+          </div>
+          <div class="canal-card">
+            <h4>EconoMirna</h4>
+            <p class="canal-estilo">Mirna Borges</p>
+            <p>
+              Bem didático para iniciantes. Ideal para entender conceitos como
+              juros compostos, renda fixa e como montar sua primeira carteira
+              sem complicação.
+            </p>
+          </div>
+          <div class="canal-card">
+            <h4>Investidor Sardinha</h4>
+            <p class="canal-estilo">Raul Sena</p>
+            <p>
+              Focado em ações e análise de empresas. Quando você já estiver na
+              Fase 3 do seu plano, esse canal vai te ajudar a escolher as
+              melhores empresas para investir!
+            </p>
+          </div>
+        </div>
+
+        <h3 style="color: var(--primary); margin-top: 30px">
+          🛠️ Sites e Ferramentas Gratuitas
+        </h3>
+        <p>
+          Além dos canais, use estas ferramentas para acompanhar seus
+          investimentos e simular compras sem gastar nada:
+        </p>
+
+        <div class="ferramenta-grid">
+          <div class="ferramenta-item">
+            <strong>Status Invest</strong>
+            <span
+              >Crie uma carteira virtual, acompanhe ações e veja dividendos.
+              Perfeito para a Fase 1 do seu plano!</span
+            >
+          </div>
+          <div class="ferramenta-item">
+            <strong>Investidor 10</strong>
+            <span
+              >Simulador de investimentos. Coloque um valor e veja quanto ele
+              rende em 5, 10 ou 20 anos!</span
+            >
+          </div>
+          <div class="ferramenta-item">
+            <strong>Fundamentus</strong>
+            <span
+              >Dados completos de empresas. Quando quiser saber se uma empresa é
+              boa para investir, pesquise aqui.</span
+            >
+          </div>
+          <div class="ferramenta-item">
+            <strong>Google Finance</strong>
+            <span
+              >Acompanhe preços de ações em tempo real. Ótimo para checar
+              rapidamente como estão suas empresas favoritas.</span
+            >
+          </div>
+        </div>
+
+        <h3 style="color: var(--primary); margin-top: 30px">
+          🏦 Corretoras para Começar (Todas Gratuitas!)
+        </h3>
+        <p>
+          Para investir de verdade, você precisa de uma
+          <strong>corretora</strong>
+          — é o app onde você compra e vende investimentos. Todas abaixo são
+          gratuitas e fáceis de usar:
+        </p>
+
+        <table class="info-table">
+          <tr>
+            <th>Corretora</th>
+            <th>Por que é Boa</th>
+            <th>Taxa</th>
+          </tr>
+          <tr class="destaque">
+            <td><strong>Rico ⭐</strong></td>
+            <td>A favorita da Dinda! Muito conteúdo educativo para aprender</td>
+            <td><span class="risco-baixo">Grátis</span></td>
+          </tr>
+          <tr>
+            <td><strong>Nubank</strong></td>
+            <td>Super fácil de usar — você já conhece!</td>
+            <td><span class="risco-baixo">Grátis</span></td>
+          </tr>
+          <tr>
+            <td><strong>Inter</strong></td>
+            <td>App completo, tudo junto num lugar só</td>
+            <td><span class="risco-baixo">Grátis</span></td>
+          </tr>
+          <tr>
+            <td><strong>Clear</strong></td>
+            <td>Simples e direto ao ponto</td>
+            <td><span class="risco-baixo">Grátis</span></td>
+          </tr>
+        </table>
+      </div>
+
+      <!-- PLANILHA DE INVESTIMENTOS -->
+      <div class="card planilha-section">
+        <h2>📊 Sua Planilha de Investimentos</h2>
+        <p>
+          Todo grande investidor acompanha os seus números! Esta planilha foi
+          feita especialmente para você controlar seus investimentos, anotar
+          quanto investiu, quanto rendeu e acompanhar a sua evolução mês a mês.
+        </p>
+
+        <div class="download-box">
+          <h3>📈 Controle na Ponta do Lápis</h3>
+          <p>
+            Baixe a planilha, abra no celular ou computador, e comece a
+            registrar cada investimento. Ver o seu dinheiro crescendo em números
+            reais é a melhor motivação para continuar!
+          </p>
+          <a
+            href="planilha_investimentos_enzo.xlsx"
+            download
+            class="btn-download"
+            style="background: #6c5ce7"
+            >⬇️ Baixar Planilha de Investimentos (Excel)</a
+          >
+        </div>
+      </div>
+
+      <!-- GLOSSÁRIO -->
+      <div class="card">
+        <h2>📖 Glossário — Palavras Importantes</h2>
+        <p>
+          Antes de investir, domine o vocabulário! Aqui estão os termos que todo
+          investidor precisa saber:
+        </p>
+        <div class="glossario-grid">
+          <div class="glossario-item">
+            <strong>Ação</strong>
+            <span>Pedacinho de uma empresa que você pode comprar</span>
+          </div>
+          <div class="glossario-item">
+            <strong>Bolsa de Valores (B3)</strong>
+            <span>Lugar onde as ações são compradas e vendidas</span>
+          </div>
+          <div class="glossario-item">
+            <strong>Corretora</strong>
+            <span>Empresa que te ajuda a comprar e vender investimentos</span>
+          </div>
+          <div class="glossario-item">
+            <strong>Dividendos</strong>
+            <span>Parte do lucro da empresa que ela te paga</span>
+          </div>
+          <div class="glossario-item">
+            <strong>Juros Compostos</strong>
+            <span>Juros sobre juros — seu dinheiro cresce mais rápido!</span>
+          </div>
+          <div class="glossario-item">
+            <strong>Renda Fixa</strong>
+            <span>Investimento onde você sabe quanto vai ganhar</span>
+          </div>
+          <div class="glossario-item">
+            <strong>Renda Variável</strong>
+            <span>Investimento onde o ganho varia (pode subir ou descer)</span>
+          </div>
+          <div class="glossario-item">
+            <strong>Tesouro Direto</strong>
+            <span>Investimento do governo brasileiro — muito seguro!</span>
+          </div>
+        </div>
       </div>
 
       <!-- PODCAST DA PROFECIA -->
       <div class="card podcast-section-future">
         <img
-          src="imagens/slide10.png"
+          src="imagens/slide10.jpg"
           alt="Podcast do Futuro"
           class="slide-img"
           style="border: none; box-shadow: none"
@@ -314,17 +1272,61 @@
         <div class="audio-player">
           <h3>🎙️ Episódio 247 - Liberdade aos 30</h3>
           <audio controls>
-            <source src="audio_profecia_2046.m4a" type="audio/mpeg" />
+            <source src="audio_profecia_2046.m4a" type="audio/mp4" />
             Seu navegador não suporta o elemento de áudio.
           </audio>
+        </div>
+      </div>
+      <!-- CARTA DA DINDA -->
+      <div class="card carta-dinda">
+        <h2>💌 Uma Carta da Sua Dinda</h2>
+        <p>Antes de encerrar, a Dinda tem algo para te dizer:</p>
+
+        <div class="carta-conteudo">
+          <!-- SUBSTITUIR PELO TEXTO REAL DA DINDA -->
+          <p>
+            Enzo, meu afilhado querido,
+          </p>
+          <p>
+            Eu montei tudo isso com muito carinho porque acredito demais em
+            você. Enquanto a maioria das crianças da sua idade só pensa em
+            gastar, você está aprendendo a construir o seu futuro. Isso me
+            enche de orgulho!
+          </p>
+          <p>
+            Não precisa ser perfeito, não precisa entender tudo de uma vez.
+            O que importa é dar o primeiro passo — e você já está dando.
+            Eu vou estar aqui para te ajudar sempre que precisar.
+          </p>
+          <p>
+            Daqui a 20 anos, quando você tiver conquistado a sua liberdade
+            financeira, vai lembrar que tudo começou aqui, com 10 anos de
+            idade, ouvindo a sua Dinda. E eu vou estar lá para comemorar
+            com você!
+          </p>
+          <p class="carta-assinatura">
+            Com todo amor, sua Dinda 💙
+          </p>
         </div>
       </div>
     </div>
 
     <footer>
+      <p style="font-size:1.2rem; color:var(--primary); margin-bottom:10px;">
+        Parabéns, Enzo! Você chegou ao final do guia!
+      </p>
       <p>
-        Enzo, o hábito e o conhecimento que você está construindo hoje são o seu
-        verdadeiro tesouro. A sua dinda tem muito orgulho de você!
+        O hábito e o conhecimento que você está construindo hoje são o seu
+        verdadeiro tesouro. Lembre-se: o segredo não é ter muito dinheiro,
+        é <strong>começar cedo e ser consistente</strong>.
+      </p>
+      <p style="margin-top:15px;">
+        Seu próximo passo agora: <strong>Fase 1, Missão 1</strong> —
+        assista o primeiro vídeo do Me Poupe ou Primo Rico ainda hoje!
+      </p>
+      <p style="margin-top:15px; font-size:0.95rem;">
+        Daqui a alguns anos, você vai olhar para trás e agradecer a si mesmo
+        por ter começado AGORA. A sua dinda tem muito orgulho de você! 💙
       </p>
     </footer>
   </body>
